@@ -1,0 +1,12 @@
+{
+  "name": "bitware",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "author": "bitware",
+  "license": "ISC"
+}
