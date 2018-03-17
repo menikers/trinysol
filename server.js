@@ -1,20 +1,14 @@
-var express = require('express');
+var express = require('express')
 var app = express();
 
-port = process.env.PORT || 8080
+var port = process.env.PORT || 8080;
 
-app.use(express.static (__dirname));
+app.use(express.static(__dirname + '/public'));
 
-
-app.get("/", function(req, res) {
-    res.render('ndex');
+app.get('/', function(req, res) {
+	res.render('index');
 })
 
 app.listen(port, function() {
-  console.log ("app runnig");
+	console.log('app running')
 })
-
-
-
-
-
