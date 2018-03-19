@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Nosotros | </title>
-	
-	<!-- core CSS -->
+    <title>Taller Alemán | Contacto</title>
+    
+    <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  (045) 772 123 70 10</p></div>
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>    (045) 772 123 70 10</p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
@@ -67,11 +67,10 @@
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
                 </div>
-				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="about-us.html">Nosotros</a></li>
+                        <li><a href="about-us.html">Nosotros</a></li>
                         
                         <li><a href="portfolio.html">Proyectos</a></li>
                         <li class="dropdown">
@@ -83,113 +82,108 @@
                             </ul>
                         </li>
                         <li><a href="index.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contacto</a></li>                        
+                       <li class="active"><a href="contact-us.html">Contacto</a></li>                        
                     </ul>
                 </div>
+
             </div><!--/.container-->
         </nav><!--/nav-->
-	</header><!--/header-->
+    </header><!--/header-->
 
-    <section id="about-us">
+    <section id="contact-info">
+        <div class="center">                
+            <h2>Contáctanos</h2>
+            <p class="lead">Contamos con dos direcciones</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <div class="gmap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7049.528893591129!2d-99.12057792399145!3d20.614261592332834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d15977b49ab57b%3A0x28eb5231ee388102!2sCardonal%2C+Hgo.!5e0!3m2!1ses-419!2smx!4v1521490736407" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 map-content">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>Oficinas del Taller Alemán</h5>
+                                    <p>Avenida Benito Juárez No., Centro, 42370  <br>
+                                   Cardonal, Carretera Ixmiquilpan-Santuario. </p>
+                                    <p>Teléfono: (045) 772 123 70 10 <br>
+                                    Email info@trinysol.com </p>
+                                </address>
+
+                               
+                            </li>
+
+
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>Ixmiquilpan Hidalgo</h5>
+                                    <p>Plaza Comercial Mexicana en el pasillo hacia el cine. <br>
+                                    
+                                    <p>Teléfono: (045) 772 123 70 10<br>
+                                    Email info@trinysol.com </p>
+                                </address>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!--/gmap_area -->
+
+    <section id="contact-page">
         <div class="container">
-			<div class="center wow fadeInDown">
-				<h2>Acerca de nosotros</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-			</div>
-			
-			<!-- about us slider -->
-			<div id="about-slider">
-				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-				  	<ol class="carousel-indicators visible-xs">
-					    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-slider" data-slide-to="1"></li>
-					    <li data-target="#carousel-slider" data-slide-to="2"></li>
-				  	</ol>
+            <div class="center">        
+                <h2>Mensaje</h2>
+                <p class="lead">Envianos tu mensaje a nuestro correo, pronto te atenderemos con mucho gusto.</p>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Nombre *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Correo *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Compania</label>
+                            <input type="text" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Asunto *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Enviar mensaje</button>
+                        </div>
+                    </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
 
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div>
-					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
-					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
-					</div>
-					
-					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-						<i class="fa fa-angle-left"></i> 
-					</a>
-					
-					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-						<i class="fa fa-angle-right"></i> 
-					</a>
-				</div> <!--/#carousel-slider-->
-			</div><!--/#about-slider-->
-			
-			
-			<!-- Our Skill -->
-			<div class="skill-wrap clearfix">
-			
-				<div class="center wow fadeInDown">
-					<h2>Our Skill</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-				</div>
-				
-				<div class="row">
-		
-					<div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div class="joomla-skill">                                   
-								<p><em>85%</em></p>
-								<p>Joomla</p>
-							</div>
-						</div>
-					</div>
-					
-					 <div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div class="html-skill">                                  
-								<p><em>95%</em></p>
-								<p>HTML</p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-							<div class="css-skill">                                    
-								<p><em>80%</em></p>
-								<p>CSS</p>
-							</div>
-						</div>
-					</div>
-					
-					 <div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-							<div class="wp-skill">
-								<p><em>90%</em></p>
-								<p>Wordpress</p>                                     
-							</div>
-						</div>
-					</div>
-					
-				</div>
-	
-            </div><!--/.our-skill-->
-			
+  
 
-				
-				
-			</div><!--section-->
-		</div><!--/.container-->
-    </section><!--/about-us-->
-	
-    
-
-   <footer id="footer" class="midnight-blue">
+    <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -206,12 +200,8 @@
             </div>
         </div>
     </footer><!--/#footer-->
-    
 
     <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
